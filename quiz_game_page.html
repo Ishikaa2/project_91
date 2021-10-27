@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Math Quiz Game!</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="quiz_game.css">
+
+        <script src="quiz_game_login.js"></script>
+
+    </head>
+
+    <body style="background-image: url(shapess.jpeg);">
+        <h4 id="player1_name"></h4>
+        <span id="player1_score"></span>
+
+        <br>
+
+        <h4 id="player2_name"></h4>
+        <span id="player2_score"></span>
+
+        <div class="container">
+            <center>
+                <h2 style="color: white;"></h2>
+                <h3 id="player_question"></h3>
+                <h3 id="player_answer"></h3>
+
+                <br>
+
+                <div style="background-color: #e8ffff; width: 30%; padding-top: 5px; padding-bottom: 5px; border-radius: 10%; border-top: 10px solid grey;" id="output"> </div>
+
+                <br>
+
+                <div style="background-color: black; border-radius: 15%; padding-top: 20px; padding-bottom: 20px; width: 30%; padding-right: 20px; padding-left: 20px;">
+
+                    <h4 style="background-color: black; color: white; padding-top: 10px; padding-bottom: 10px; font-size: 20px;">Number 1</h4>
+
+                    <br>
+
+                    <input type="text" class="form-control" id="number1" placeholder="number 1">
+
+                </div>
+
+                <br>
+
+                <div style="background-color: black; border-radius: 15%; padding-top: 20px; padding-bottom: 20px; width: 30%; padding-right: 20px; padding-left: 20px;">
+
+                    <h4 style="background-color: black; color: white; padding-top: 10px; padding-bottom: 10px; font-size: 20px;">Number 2</h4>
+
+                    <br>
+
+                    <input type="text" class="form-control" id="number2" placeholder="number 2">
+
+                </div>
+
+                <br>
+
+                <button style="width: 30%;" onclick="send()" class="btn btn-primary">Send</button>
+            </center>
+        </div>
+    </body>
